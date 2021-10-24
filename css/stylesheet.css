@@ -84,7 +84,7 @@ header {
   display: flex;
   justify-content: space-between;
   background-color: DarkSlateBlue;
-  padding: 30rem 16.5%;
+  padding: 30rem 18.75%;
   align-items: center;
   color: white;
 }
@@ -264,7 +264,7 @@ footer {
   display: flex;
   justify-content: space-between;
   background-color: DarkSlateBlue;
-  padding: 30rem 16.5%;
+  padding: 30rem 18.75%;
   align-items: center;
   color: white;
 }
