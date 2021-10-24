@@ -157,9 +157,10 @@ span#titlecss {
 
 .timLeeImage {
   float: right;
-  max-width: 100%;
+  max-width: 87%;
   margin-left: 25rem;
-  margin-bottom: 15rem;
+  margin-bottom: 10rem;
+  margin-top: 6rem;
 }
 
 #imageTim {
