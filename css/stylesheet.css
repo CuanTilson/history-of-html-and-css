@@ -123,11 +123,11 @@ ul li a:hover {
   font-size: 30rem;
 }
 
-span#titlehtml {
+.titlehtml {
   color: #E54C21;
 }
 
-span#titlecss {
+.titlecss {
   color: #264DE4;
 }
 
@@ -252,6 +252,7 @@ tr:nth-child(odd) {
 
 #references a {
   color: black;
+  font-weight: bold;
 }
 
 #references a:hover {
