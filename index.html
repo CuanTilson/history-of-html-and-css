@@ -5,12 +5,11 @@
   <meta charset="utf-8">
   <!-- mobile setting -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="pragma" content="no-cache" />
   <link rel="icon" href="favicon.ico" type="image/ico" sizes="16x16">
   <link rel="icon" href="favicon.ico" type="image/ico" sizes="32x32">
   <link rel="icon" href="favicon.ico" type="image/ico" sizes="96x96">
-  <link rel="stylesheet" href="css\stylesheet.css">
-  <script src="js\javascript.js"></script>
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <script src="js/javascript.js"></script>
   <title>History of HTML and CSS</title>
 </head>
 
@@ -30,16 +29,16 @@
   <div class="content">
     <div class="main">
       <div class="title">
-        History of&nbsp;<span id="titlehtml">&lt;html&gt;</span>&nbsp;and&nbsp;<span id="titlecss">{css}</span>
+        History of&nbsp;<span class="titlehtml">&lt;html&gt;</span>&nbsp;and&nbsp;<span class="titlecss">{css}</span>
       </div>
 
       <section id="abouthtml">
         <div class="subheading">
-          <span id="titlehtml">&lt;html&gt;</span>
+          <span class="titlehtml">&lt;html&gt;</span>
         </div>
 
         <figure class=timLeeImage>
-          <img id=imageTim src="images\Sir_Tim_Berners-Lee.jpg" alt="Tim Berners-Lee">
+          <img id=imageTim src="images/Sir_Tim_Berners-Lee.jpg" alt="Tim Berners-Lee">
           <figcaption>
             Tim Berners-Lee&nbsp;|
             <cite>
@@ -55,7 +54,7 @@
         </p>
         <p>
           The first version of HTML was released in 1993. This version of HTML had very basic features only having the capability of displaying text and images. The very few tags that it did have were the&nbsp;<code>&lt;P&gt;</code>, the
-          <code>&lt;H1&gt;</code> to <code>&lt;H2&gt;</code>, <code>&lt;UL&gt;</code> and <code>&lt;A&gt;</code> tags. It didn’t have any styling possibilities for changing colours or fonts.
+          <code>&lt;H1&gt;</code> to <code>&lt;H2&gt;</code>, <code>&lt;UL&gt;</code> and <code>&lt;A&gt;</code> tags. It had no facility for styling such as changing text fonts or colours.
         </p>
         <p>
           In 1995, HTML&nbsp;2 was released. This version of HTML was a standardised version of HTML that all future versions of HTML would build upon. It had all the capabilities of the first version but with the addition some new HTML tags. Some of
@@ -68,7 +67,7 @@
           scripting languages and stylesheets respectively.
         </p>
         <p>
-          HTML&nbsp;4.01 was releasedin 1999 and with it came support of external style sheets. This was a very important development in terms of web-design. Support for style sheets meant that CSS could be applied to the entire website rather than
+          HTML&nbsp;4.01 was released in 1999 and with it came support of external style sheets. This was a very important development in terms of web-design. Support for style sheets meant that CSS could be applied to the entire website rather than
           for each individual HTML file. Some of the tags that were introduced in 4.01 were the <code>&&lt;BUTTON&gt;</code>, <code>&lt;IFRAME&gt;</code> and the <code>&lt;SPAN&gt;</code> tags.
         </p>
         <p>
@@ -80,11 +79,11 @@
 
       <section id="aboutcss">
         <div class="subheading">
-          <span id="titlecss">{css}</span>
+          <span class="titlecss">{css}</span>
         </div>
 
         <figure class=HåkonImage>
-          <img id=imageHåkon src="images\Håkon_Wium_Lie.jpg" alt="Håkon Wium Lie">
+          <img id=imageHåkon src="images/Håkon_Wium_Lie.jpg" alt="Håkon Wium Lie">
           <figcaption>
             Håkon Wium Lie&nbsp;|
             <cite>
@@ -133,170 +132,176 @@
             <td>This tag is to make comments in the HTML code.<br> The browser does not display these.</td>
             <td>You can explain your code with these comments so that you dont forget what something does.</td>
             <td>This tag does not support attributes.</td>
-            <td>Support on all browsers</td>
+            <td>Chrome, Edge, Firefox, Safari and Opera.</td>
           </tr>
           <tr>
             <td>&lt;a&gt;</td>
             <td>This is the anchor tag and it represents a hyperlink.</td>
-            <td></td>
+            <td>This tag can link images, videos and links to other websites.wd</td>
             <td>One of the most important attributes of the &lt;a&gt; tag is href. This points to a link's destination.</td>
-            <td>Support on all browsers</td>
+            <td>Chrome, Edge, Firefox, Safari and Opera.</td>
           </tr>
           <tr>
             <td>&lt;article&gt;</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>The &lt;article&gt; tag is used for content specific to one topic.</td>
+            <td>The article should be able to make sense out of context</td>
+            <td>Has access to global and event attributes.</td>
+            <td>Chrome, Edge, Firefox, Safari and Opera.</td>
           </tr>
           <tr>
             <td>&lt;body&gt;</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Represents the main content of the page.</td>
+            <td>Contains all the other tags in a page.</td>
+            <td>Has access to global and event attributes.</td>
+            <td>Chrome, Edge, Firefox, Safari and Opera.</td>
           </tr>
           <tr>
             <td>&lt;br&gt;</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Adds a line break.</td>
+            <td>Can be used to send a sentence onto the next line.</td>
+            <td>Has access to global and event attributes.</td>
+            <td>Chrome, Edge, Firefox, Safari and Opera.</td>
           </tr>
           <tr>
             <td>&lt;code&gt;</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Used to define a piece of computer code on a page.</td>
+            <td>Can be useful when writing code in a webpage.</td>
+            <td>Has access to global and event attributes.</td>
+            <td>Chrome, Edge, Firefox, Safari and Opera.</td>
           </tr>
           <tr>
             <td>&lt;div&gt;</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Creates a division or section in a page.</td>
+            <td>Used to divide page into seperate sections.</td>
+            <td>Has access to global and event attributes.</td>
+            <td>Chrome, Edge, Firefox, Safari and Opera.</td>
           </tr>
           <tr>
             <td>&lt;footer&gt;</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Defines a footer in the page.</td>
+            <td>Used to contain items that you want to have in a footer. It can be put down to the bottom of the page.</td>
+            <td>Has access to global and event attributes.</td>
+            <td>Chrome, Edge, Firefox, Safari and Opera.</td>
           </tr>
           <tr>
             <td>&lt;head&gt;</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Contains all the metadata.</td>
+            <td>Inside this element you can change the title of the page, link style sheets and what character set is being used.</td>
+            <td>Has access to global and event attributes.</td>
+            <td>Chrome, Edge, Firefox, Safari and Opera.</td>
           </tr>
           <tr>
             <td>&lt;header&gt;</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Contains elements that you might want to have at the top of you page.</td>
+            <td>You can have links to other pages in your website and also your logo here.</td>
+            <td>Has access to global and event attributes.</td>
+            <td>Chrome, Edge, Firefox, Safari and Opera.</td>
           </tr>
           <tr>
             <td>&lt;html&gt;</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>This is the root of the document.</td>
+            <td>This is the container of every other element.</td>
+            <td>Has access to global and event attributes.</td>
+            <td>Chrome, Edge, Firefox, Safari and Opera.</td>
           </tr>
           <tr>
             <td>&lt;iframe&gt;</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Used to define an inline frame.</td>
+            <td>Can be used to embed another webpage or video inside the document.</td>
+            <td>Has access to global and event attributes.</td>
+            <td>Chrome, Edge, Firefox, Safari and Opera.</td>
           </tr>
           <tr>
             <td>&lt;img&gt;</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Used to link an image into a document.</td>
+            <td>You can add images into your webpage.</td>
+            <td>Requires two attributes, the src (source) and alt (alternate). The src is the path to the image and alt is what is displayed if the image can not be displayed.</td>
+            <td>Chrome, Edge, Firefox, Safari and Opera.</td>
           </tr>
           <tr>
             <td>&lt;li&gt;</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Used to define a list item.</td>
+            <td>Can be useful when you want to create a list in your website, can also be used when make a navigation bar.</td>
+            <td>Has access to global and event attributes.</td>
+            <td>Chrome, Edge, Firefox, Safari and Opera.</td>
           </tr>
           <tr>
             <td>&lt;link&gt;</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Links to external resources like Css or Js files</td>
+            <td>The most often use of this tag is to link to an external style sheet.</td>
+            <td>Has access to global and event attributes.</td>
+            <td>Chrome, Edge, Firefox, Safari and Opera.</td>
           </tr>
           <tr>
             <td>&lt;meta&gt;</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Defines information about a document.</td>
+            <td>Can be used to specify the character set being used, a desription of the page and viewport settings.</td>
+            <td>Has access to global and event attributes.</td>
+            <td>Chrome, Edge, Firefox, Safari and Opera.</td>
           </tr>
           <tr>
             <td>&lt;nav&gt;</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Defines navigation links.</td>
+            <td>Can be used to group together navigational links to other parts of your website.</td>
+            <td>Has access to global and event attributes.</td>
+            <td>Chrome, Edge, Firefox, Safari and Opera.</td>
           </tr>
           <tr>
             <td>&lt;ol&gt;</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Defines an ordered list.</td>
+            <td>Can be useful when you want your list to be numbered for a recipe.</td>
+            <td>Has access to global and event attributes.</td>
+            <td>Chrome, Edge, Firefox, Safari and Opera.</td>
           </tr>
           <tr>
             <td>&lt;p&gt;</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Defines a paragraph.</td>
+            <td>Can be used to split up content that needs to go into a seperate paragraph.</td>
+            <td>Has access to global and event attributes.</td>
+            <td>Chrome, Edge, Firefox, Safari and Opera.</td>
+          </tr>
+          <tr>
+            <td>&lt;script&gt;</td>
+            <td>Used to embed JavaScript inside of the document.</td>
+            <td>This can contain code that is to be executed.</td>
+            <td>Has access to global and event attributes.</td>
+            <td>Chrome, Edge, Firefox, Safari and Opera.</td>
           </tr>
           <tr>
             <td>&lt;section&gt;</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Defines a section in the document.</td>
+            <td>As the name suggests, this tag can be used to create sections within your page.</td>
+            <td>Has access to global and event attributes.</td>
+            <td>Chrome, Edge, Firefox, Safari and Opera.</td>
           </tr>
           <tr>
             <td>&lt;span&gt;</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>This is an inline container.</td>
+            <td>Can be used to have different styling on a word in comparison to the rest of the sentence.</td>
+            <td>Has access to global and event attributes.</td>
+            <td>Chrome, Edge, Firefox, Safari and Opera.</td>
           </tr>
           <tr>
             <td>&lt;table&gt;</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Defines a table in the document.</td>
+            <td>Can be used to display data.</td>
+            <td>Has access to global and event attributes.</td>
+            <td>Chrome, Edge, Firefox, Safari and Opera.</td>
           </tr>
           <tr>
             <td>&lt;title&gt;</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Defines the title of the document which will be shown in the page's tab in the browser.</td>
+            <td>This is required in HTML documents, as it is used by the search engine to decide in what order tolist the page in search results.</td>
+            <td>Has access to global and event attributes.</td>
+            <td>Chrome, Edge, Firefox, Safari and Opera.</td>
           </tr>
           <tr>
             <td>&lt;ul&gt;</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Defines an unordered list.</td>
+            <td>Can be useful when creating a navigation bar or making a list of points in no particular order.</td>
+            <td>Has access to global and event attributes.</td>
+            <td>Chrome, Edge, Firefox, Safari and Opera.</td>
           </tr>
-          <tr>
         </table>
       </section>
 
@@ -319,6 +324,9 @@
           Boss, B. (2016). A brief history of CSS until 2016. [online] W3.org. <br> Available at: <a href="https://www.w3.org/Style/CSS20/history.html" target="_blank">https://www.w3.org/Style/CSS20/history.html</a> [Accessed 22 Oct. 2021]. ‌
         </p>
         <p>
+          W3schools.com. (2021). HTML Element Reference. [online] Available at: https://www.w3schools.com/tags/default.asp [Accessed 22 Oct. 2021].
+        </p>
+        <p>
           Wells, C.J. (2018). A Brief History of CSS. [online] Technologyuk.net. <br> Available at: <a href="https://www.technologyuk.net/computing/website-development/introduction-to-css/introduction.shtml"
             target="_blank">https://www.technologyuk.net/computing/website-development/introduction-to-css/introduction.shtml</a> [Accessed 23 Oct. 2021].
         </p>
@@ -329,8 +337,6 @@
     <p class="copyright">&copy; Copyright 2021&nbsp;|&nbsp;Cúán Tilson</p>
     <a class="backtotop" href="#top">Back To Top</a>
   </footer>
-
-
 
 </body>
 
