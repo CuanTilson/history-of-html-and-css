@@ -157,7 +157,7 @@ span.titlecss {
 
 .timLeeImage {
   float: right;
-  max-width: 87%;
+  max-width: 50%;
   margin-left: 25rem;
   margin-bottom: 10rem;
   margin-top: 6rem;
@@ -167,7 +167,7 @@ span.titlecss {
   max-width: 100%;
 }
 
-.timLeeImage figcaption {
+figcaption {
   font-size: 16rem;
   color: black;
 }
@@ -178,7 +178,7 @@ figcaption cite {
 
 .HåkonImage {
   float: right;
-  max-width: 100%;
+  max-width: 40%;
   margin-left: 25rem;
 }
 
@@ -186,10 +186,6 @@ figcaption cite {
   max-width: 100%;
 }
 
-.HåkonImage figcaption {
-  font-size: 16rem;
-  color: black;
-}
 
 code {
   font-family: courier;
