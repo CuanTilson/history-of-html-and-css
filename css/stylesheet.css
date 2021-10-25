@@ -164,6 +164,7 @@ span.titlecss {
 }
 
 #imageTim {
+  box-shadow: 2px 5px 12px rgba(32, 32, 32, .3);
   max-width: 100%;
 }
 
@@ -183,9 +184,9 @@ figcaption cite {
 }
 
 #imageHåkon {
+  box-shadow: 2px 5px 12px rgba(32, 32, 32, .3);
   max-width: 100%;
 }
-
 
 code {
   font-family: courier;
@@ -223,23 +224,24 @@ th, td {
   padding: 12px 15px;
 }
 
-td {
-  height: auto;
-}
-
-td:nth-child(2), td:nth-child(3), td:nth-child(4) {
-  text-align: left;
-  width: auto;
-}
-
-td:nth-child(1) {
-  width: auto;
-}
-
 th {
   font-weight: bold;
   background: DarkSlateBlue;
   color: white;
+}
+
+td {
+  height: auto;
+}
+
+td:nth-child(2), td:nth-child(3), td:nth-child(4), td:nth-child(5) {
+  text-align: left;
+  width: auto;
+  height: auto;
+}
+
+td:nth-child(1) {
+  width: auto;
 }
 
 tr:nth-child(odd) {
