@@ -209,8 +209,6 @@ code {
 table {
   font-family: "Calibri";
   z-index: 2;
-  left: 50%;
-  top: 50%;
   min-width: 400rem;
   border-collapse: collapse;
   border-spacing: 0;
@@ -227,6 +225,7 @@ th, td {
 }
 
 th {
+  font-size: 20rem;
   font-weight: bold;
   background: DarkSlateBlue;
   color: white;
@@ -240,15 +239,16 @@ td {
   height: auto;
 }
 
-td:nth-child(2), td:nth-child(3), td:nth-child(4), td:nth-child(5) {
-  text-align: left;
-  width: auto;
-  height: auto;
+td:nth-child(1) {
+  font-size: 22rem;
 }
 
-td:nth-child(1) {
-  font-size: 20rem;
-  width: auto;
+td:nth-child(1), td:nth-child(5) {
+  width: 150rem;
+}
+
+td:nth-child(2), td:nth-child(3), td:nth-child(4), td:nth-child(5) {
+  text-align: left;
 }
 
 tr:nth-child(odd) {
