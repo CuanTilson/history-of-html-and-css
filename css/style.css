@@ -90,7 +90,6 @@ header {
 }
 
 header ul li {
-  display: inline-block;
   float: left;
   margin: 0rem 0rem 0rem 35rem;
 }
@@ -98,10 +97,33 @@ header ul li {
 header ul li a {
   color: white;
   transition: color linear 0.60s;
+  display: block;
 }
 
 header ul li a:hover {
   color: orange;
+}
+
+header ul li ul {
+  position: absolute;
+  width: 80rem;
+  margin-top: 50rem;
+}
+
+header ul li ul li {
+  margin: 10rem 0 0 0;
+  display: none;
+  background-color: black;
+}
+
+header ul li ul li a {
+  color: black;
+}
+
+header ul li:hover ul li {
+  border-radius: 5rem;
+  border : 1px solid DarkSlateBlue;
+  display: inline-block;
 }
 
 .logo {
@@ -153,6 +175,10 @@ span.titlecss {
 
 .content a:hover {
   text-decoration: underline;
+}
+
+.content a:visited {
+  color: #826d8c;
 }
 
 .timLeeImage {
@@ -208,7 +234,6 @@ code {
 
 table {
   font-family: "Calibri";
-  z-index: 2;
   min-width: 400rem;
   border-collapse: collapse;
   border-spacing: 0;
@@ -218,6 +243,7 @@ table {
   background: #fafafafa;
   text-align: center;
   margin: auto;
+  margin-bottom: 50rem;
 }
 
 th, td {
@@ -266,6 +292,10 @@ tr:nth-child(odd) {
 
 #references a:hover {
   text-decoration: underline;
+}
+
+#references a:visited {
+  color: #826d8c;
 }
 
 footer {
