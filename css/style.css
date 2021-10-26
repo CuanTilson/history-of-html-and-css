@@ -84,23 +84,23 @@ header {
   display: flex;
   justify-content: space-between;
   background-color: DarkSlateBlue;
-  padding: 30rem 18.75%;
+  padding: 30rem 18.55%;
   align-items: center;
   color: white;
 }
 
-ul li {
+header ul li {
   display: inline-block;
   float: left;
-  padding: 0rem 0rem 0rem 35rem;
+  margin: 0rem 0rem 0rem 35rem;
 }
 
-ul li a {
+header ul li a {
   color: white;
   transition: color linear 0.60s;
 }
 
-ul li a:hover {
+header ul li a:hover {
   color: orange;
 }
 
@@ -144,7 +144,7 @@ span.titlecss {
 
 .content p {
   margin-bottom: 15rem;
-  line-height: 1.5em;
+  line-height: 27rem;
 }
 
 .content a {
@@ -160,7 +160,7 @@ span.titlecss {
   max-width: 50%;
   margin-left: 25rem;
   margin-bottom: 10rem;
-  margin-top: 6rem;
+  margin-top: 8rem;
 }
 
 #imageTim {
@@ -179,8 +179,9 @@ figcaption {
 
 .HåkonImage {
   float: right;
-  max-width: 40%;
+  max-width: 35%;
   margin-left: 25rem;
+  margin-top: 8rem;
 }
 
 #imageHåkon {
@@ -210,7 +211,7 @@ table {
   z-index: 2;
   left: 50%;
   top: 50%;
-  width: 100%;
+  min-width: 400rem;
   border-collapse: collapse;
   border-spacing: 0;
   border-radius: 12px 12px 0 0;
@@ -218,6 +219,7 @@ table {
   box-shadow: 2px 5px 12px rgba(32, 32, 32, .3);
   background: #fafafafa;
   text-align: center;
+  margin: auto;
 }
 
 th, td {
@@ -228,6 +230,10 @@ th {
   font-weight: bold;
   background: DarkSlateBlue;
   color: white;
+}
+
+th:nth-child(2), th:nth-child(3), th:nth-child(4), th:nth-child(5) {
+  text-align: left;
 }
 
 td {
@@ -241,11 +247,16 @@ td:nth-child(2), td:nth-child(3), td:nth-child(4), td:nth-child(5) {
 }
 
 td:nth-child(1) {
+  font-size: 20rem;
   width: auto;
 }
 
 tr:nth-child(odd) {
   background-color: #eee;
+}
+
+#references ol {
+  list-style: disc;
 }
 
 #references a {
@@ -263,7 +274,7 @@ footer {
   display: flex;
   justify-content: space-between;
   background-color: DarkSlateBlue;
-  padding: 30rem 18.75%;
+  padding: 30rem 18.55%;
   align-items: center;
   color: white;
 }
@@ -280,14 +291,3 @@ footer {
 .backtotop:hover {
   color: orange;
 }
-
-/*
-CSS that I need to add in:
-Font and text properties: font-variant, font
-Colour and background properties: background-image, background
-Positioning: absolute, relative, static, fixed
-Borders: border, border-color, border-width, border-Style "Set the border of all thesections to a solid black 2px border Set the bottom border of the header section to 2px solid white"
-Lists:list-style-type, list-style-image "Use a square list style type for all the unordered list bullet points in your website."
-Units: ems, small / medium / large "Use % to specify table widths.Use pixels to specify font sizes."
-Demonstrate an understanding of pseudo-elements: a:active and a:visited
-*/
