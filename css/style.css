@@ -71,6 +71,7 @@ html {
 
 * {
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 body {
@@ -84,9 +85,8 @@ header {
   display: flex;
   justify-content: space-between;
   background-color: DarkSlateBlue;
-  padding: 30rem 18.55%;
+  padding: 30rem 20.8%;
   align-items: center;
-  color: white;
 }
 
 header ul li {
@@ -104,29 +104,8 @@ header ul li a:hover {
   color: orange;
 }
 
-header ul li ul {
-  position: absolute;
-  width: 80rem;
-  margin-top: 50rem;
-}
-
-header ul li ul li {
-  margin: 10rem 0 0 0;
-  display: none;
-  background-color: black;
-}
-
-header ul li ul li a {
-  color: black;
-}
-
-header ul li:hover ul li {
-  border-radius: 5rem;
-  border : 1px solid DarkSlateBlue;
-  display: inline-block;
-}
-
 .logo {
+  color: white;
   margin-right: auto;
 }
 
@@ -169,15 +148,15 @@ span.titlecss {
   line-height: 27rem;
 }
 
-.content a {
+.content p a {
   color: blue;
 }
 
-.content a:hover {
+.content p a:hover {
   text-decoration: underline;
 }
 
-.content a:visited {
+.content p a:visited {
   color: #826d8c;
 }
 
@@ -232,22 +211,76 @@ code {
   margin-bottom: 50rem;
 }
 
+.accordion {
+  max-width: 1120rem;
+  margin-bottom: 50rem;
+}
+
+.accordion__label {
+  background: DarkSlateBlue;
+  padding: 15rem;
+  max-width: 500rem;
+  font-size: 23rem;
+  display: block;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  transition: color linear 0.60s;
+}
+
+#htmllabel {
+  border-radius: 12rem 12rem 0 0;
+}
+
+label:hover {
+  color: orange;
+}
+
+.accordion__label::after {
+  content: "";
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 5rem;
+  min-width: 30rem;
+  height: 30rem;
+  background-image: url(../images/chevron-down.svg);
+  background-size: contain;
+  transition: transform 0.4s;
+}
+
+.accordion__content {
+  display: none;
+}
+
+.accordion__input {
+  display: none;
+}
+
+.accordion__input:checked ~ .accordion__content {
+  display: block;
+}
+
+.accordion__input:checked ~ .accordion__label::after {
+  transform: translateY(-50%) rotate(0.5turn);
+}
+
 table {
   font-family: "Calibri";
   min-width: 400rem;
   border-collapse: collapse;
   border-spacing: 0;
-  border-radius: 12px 12px 0 0;
+  border-radius: 0rem 12rem 0rem 0;
   overflow: hidden;
   box-shadow: 2px 5px 12px rgba(32, 32, 32, .3);
   background: #fafafafa;
   text-align: center;
-  margin: auto;
-  margin-bottom: 50rem;
+  margin: auto auto 60rem auto;
 }
 
 th, td {
-  padding: 12px 15px;
+  padding: 12rem 15rem;
 }
 
 th {
@@ -304,7 +337,7 @@ footer {
   display: flex;
   justify-content: space-between;
   background-color: DarkSlateBlue;
-  padding: 30rem 18.55%;
+  padding: 30rem 20.8%;
   align-items: center;
   color: white;
 }
@@ -321,3 +354,14 @@ footer {
 .backtotop:hover {
   color: orange;
 }
+
+/*
+CSS that I need to add in:
+Font and text properties: font-variant, font
+Colour and background properties: background-image, background
+Positioning: absolute, relative, static, fixed
+Borders: border, border-color, border-width, border-Style "Set the border of all thesections to a solid black 2px border Set the bottom border of the header section to 2px solid white"
+Lists:list-style-type, list-style-image "Use a square list style type for all the unordered list bullet points in your website."
+Units: ems, small / medium / large "Use % to specify table widths.Use pixels to specify font sizes."
+Demonstrate an understanding of pseudo-elements: a:active and a:visited
+*/
