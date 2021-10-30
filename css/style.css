@@ -213,7 +213,7 @@ code {
 
 .accordion {
   max-width: 1120rem;
-  margin-bottom: 30rem;
+  margin-bottom: 40rem;
 }
 
 .accordion__label {
@@ -230,7 +230,6 @@ code {
   border-radius: 12rem 12rem;
   box-shadow: 2px 5px 12px rgba(32, 32, 32, .3);
 }
-
 
 label:hover {
   color: orange;
@@ -258,11 +257,11 @@ label:hover {
   display: none;
 }
 
-.accordion__input:checked ~ .accordion__content {
+.accordion__input:checked~.accordion__content {
   display: block;
 }
 
-.accordion__input:checked ~ .accordion__label::after {
+.accordion__input:checked~.accordion__label::after {
   transform: translateY(-50%) rotate(0.5turn);
 }
 
@@ -314,20 +313,20 @@ tr:nth-child(odd) {
   background-color: #eee;
 }
 
-#references ol {
+#referencesdropdown ol {
   list-style: disc;
 }
 
-#references a {
+#referencesdropdown a {
   color: black;
   font-weight: bold;
 }
 
-#references a:hover {
+#referencesdropdown a:hover {
   text-decoration: underline;
 }
 
-#references a:visited {
+#referencesdropdown a:visited {
   color: #826d8c;
 }
 
