@@ -265,9 +265,9 @@ label:hover {
   transform: translateY(-50%) rotate(0.5turn);
 }
 
-table {
+.explanation {
   font-family: "Calibri", "Arial";
-  min-width: 400rem;
+  max-width: 1120rem;
   border-collapse: collapse;
   border-spacing: 0;
   border-radius: 12rem 12rem 0rem 0rem;
@@ -278,55 +278,85 @@ table {
   margin: auto auto 60rem auto;
 }
 
-th, td {
+.explanation th, td {
   padding: 12rem 15rem;
 }
 
-th {
+.explanation th {
   font-size: 20rem;
   font-weight: bold;
   background: DarkSlateBlue;
   color: white;
 }
 
-th:nth-child(2), th:nth-child(3), th:nth-child(4), th:nth-child(5) {
+.explanation th:nth-child(2), th:nth-child(3), th:nth-child(4), th:nth-child(5) {
   text-align: left;
 }
 
-td {
+.explanation td {
   height: auto;
 }
 
-td:nth-child(1) {
+.explanation td:nth-child(1) {
   font-size: 22rem;
 }
 
-td:nth-child(1), td:nth-child(5) {
+.explanation td:nth-child(1), td:nth-child(5) {
   width: 150rem;
 }
 
-td:nth-child(2), td:nth-child(3), td:nth-child(4), td:nth-child(5) {
+.explanation td:nth-child(2), td:nth-child(3), td:nth-child(4), td:nth-child(5) {
   text-align: left;
 }
 
-tr:nth-child(odd) {
+.explanation tr:nth-child(odd) {
   background-color: #eee;
 }
 
-#referencesdropdown ol {
-  list-style: disc;
+.referencestable {
+  font-family: "Calibri", "Arial";
+  max-width: 1120rem;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-radius: 12rem 12rem 0rem 0rem;
+  overflow: hidden;
+  box-shadow: 2px 5px 12px rgba(32, 32, 32, .3);
+  background: #fafafafa;
+  margin: auto auto 60rem auto;
+  text-align: left;
 }
 
-#referencesdropdown a {
+.referencestable th {
+  font-size: 20rem;
+  font-weight: bold;
+  background: DarkSlateBlue;
+  color: white;
+}
+
+.referencestable th, td {
+  padding: 12rem 15rem;
+}
+
+.referencestable tr:nth-child(odd) {
+  background-color: #eee;
+}
+
+.referencestable td {
+  display: list-item;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.referencestable a {
   color: black;
   font-weight: bold;
 }
 
-#referencesdropdown a:hover {
+.referencestable a:hover {
   text-decoration: underline;
 }
 
-#referencesdropdown a:visited {
+.referencestable a:visited {
   color: #826d8c;
 }
 
