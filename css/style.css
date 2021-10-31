@@ -344,7 +344,9 @@ label:hover {
 .referencestable td {
   display: list-item;
   list-style-type: disc;
-  list-style-position: inside;
+  list-style-position: outside;
+  max-width: 1120rem;
+  margin-left: 35rem;
 }
 
 .referencestable a {
