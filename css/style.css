@@ -305,6 +305,10 @@ label:hover {
   width: 150rem;
 }
 
+.explanation td:nth-child(3), td:nth-child(4) {
+  width: 185rem;
+}
+
 .explanation td:nth-child(2), td:nth-child(3), td:nth-child(4), td:nth-child(5) {
   text-align: left;
 }
@@ -324,7 +328,9 @@ label:hover {
   background: #fafafafa;
   margin: auto auto 60rem auto;
   text-align: left;
+
 }
+
 
 .referencestable th {
   font-size: 20rem;
