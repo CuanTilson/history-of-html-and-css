@@ -400,14 +400,3 @@ footer {
 .backtotop:hover {
   color: orange;
 }
-
-/*
-CSS that I need to add in:
-Font and text properties: font-variant, font
-Colour and background properties: background-image, background
-Positioning: absolute, relative, static, fixed
-Borders: border, border-color, border-width, border-Style "Set the border of all thesections to a solid black 2px border Set the bottom border of the header section to 2px solid white"
-Lists:list-style-type, list-style-image "Use a square list style type for all the unordered list bullet points in your website."
-Units: ems, small / medium / large "Use % to specify table widths.Use pixels to specify font sizes."
-Demonstrate an understanding of pseudo-elements: a:active and a:visited
-*/
