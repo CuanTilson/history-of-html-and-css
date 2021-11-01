@@ -133,6 +133,16 @@ span.titlecss {
   font-size: 33rem;
 }
 
+span.subhtml {
+  color: #E54C21;
+  font-size: 26rem;
+}
+
+span.subcss {
+  color: #264DE4;
+  font-size: 26rem;
+}
+
 .main {
   max-width: 1200rem;
   margin: auto;
