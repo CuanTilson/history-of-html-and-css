@@ -1,777 +1,402 @@
-<!DOCTYPE html>
-<html lang="en-IE" dir="ltr">
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*
+This is a css reset.
+The way a browser reads Html and Css is from top to bottom.
+The web browser will read this css file from top to bottom.
+Web browsers all have different default ways of displaying the html that you have written by
+placing default margins among other things.
 
-<head>
-  <meta charset="utf-8">
-  <!-- mobile setting -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Primary Meta Tags -->
-  <title>History of &lt;html&gt; and {css}</title>
-  <meta name="title" content="History of <html> and {css}">
-  <meta name="description" content="This page goes over the history of html and css. I created this website for my web authoring assignment.">
+To ensure that you website is displayed the way that you want it to be across all browsers you
+need to add css resets into your .css file or else include a CSS framework such as bootstrap.
+*/
+html, body, div, span, applet, object, iframe,
+h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-style: none;
+}
 
-  <!-- Open Graph / Facebook and Whatsapp -->
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="History of <html> and {CSS}">
-  <meta property="og:url" content="https://b3-g1.github.io/history-of-html-and-css/">
-  <meta property="og:title" content="History of <html> and {css}">
-  <meta property="og:description" content="This page goes over the history of html and css. I created this website for my web authoring assignment.">
-  <meta property="og:image" itemprop="image" content="https://b3-g1.github.io/history-of-html-and-css/images/ogcard.jpg">
-  <meta property="og:image:type" content="image/jpeg">
-  <meta property="og:image:width" content="300">
-  <meta property="og:image:height" content="300">
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
 
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://b3-g1.github.io/history-of-html-and-css/">
-  <meta property="twitter:title" content="History of <html> and {css}">
-  <meta property="twitter:description" content="This page goes over the history of html and css. I created this website for my web authoring assignment.">
-  <meta property="twitter:image" content="https://b3-g1.github.io/history-of-html-and-css/images/ogcard.jpg">
+body {
+  line-height: 1;
+}
 
-  <link rel="icon" href="favicon.ico" type="image/ico" sizes="16x16">
-  <link rel="icon" href="favicon.ico" type="image/ico" sizes="32x32">
-  <link rel="icon" href="favicon.ico" type="image/ico" sizes="96x96">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/javascript.js"></script>
-  <title>History of &lt;html&gt; and {css}</title>
-</head>
+ol, ul {
+  list-style: none;
+}
 
-<body>
-  <header>
-    <p class="logo">Wolfhound</p>
-    <nav>
-      <ul>
-        <li><a href="#abouthtml">&lt;html&gt;</a></li>
-        <li><a href="#aboutcss">{css}</a></li>
-        <li><a href="#tags">Tags</a></li>
-        <li><a href="#references">References</a></li>
-      </ul>
-    </nav>
-  </header>
+blockquote, q {
+  quotes: none;
+}
 
-  <div class="content">
-    <div class="main">
-      <div class="title">
-        History of&nbsp;<span class="titlehtml">&lt;html&gt;</span>&nbsp;and&nbsp;<span class="titlecss">{css}</span>
-      </div>
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
 
-      <section id="abouthtml">
-        <div class="subheading">
-          Evolution of <span class="titlehtml">&lt;html&gt;</span>
-        </div>
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
-        <figure class=timLeeImage>
-          <img id=imageTim src="images/TimBernersLeeandRobertCailliau.jpg" alt="Tim Berners-Lee and Robert Cailliau">
-          <figcaption>
-            Tim Berners-Lee and Robert Cailliau&nbsp;|&nbsp;<span class="cite">CERN</span>
-          </figcaption>
-        </figure>
+/*My code starts here*/
+html {
+  scroll-behavior: smooth;
+  font-size: 1px;
+}
 
-        <p>
-          HTML (HyperText Markup Language) was created in late 1990 by Tim Berners-Lee. At the time he was working at CERN and propose his markup language to CERN as a way for scientists to share files. Berners-Lee and data system engineer Robert
-          Cailliau, requested funding from CERN, but it was not granted. The first document that included HTML markup was called "HTML Tags" and is available <a href="http://info.cern.ch/hypertext/WWW/MarkUp/Tags.html" target="_blank">here</a>. The
-          tags in HTML Tags are fairly simple compared to the tags available in today’s HTML 5. There have been many versions of HTML, with each one bringing new features and new methods of designing websites.
-        </p>
-        <p>
-          The first version of HTML was released in 1993. This version of HTML had very basic features only having the capability of displaying text and images. The very few tags that it did have were the&nbsp;<code>&lt;P&gt;</code>, the
-          <code>&lt;H1&gt;</code> to <code>&lt;H2&gt;</code>, <code>&lt;UL&gt;</code> and <code>&lt;A&gt;</code> tags. It had no facility for styling such as changing text fonts or colours.
-        </p>
-        <p>
-          In 1995, HTML&nbsp;2 was released. This version of HTML was a standardised version of HTML that all future versions of HTML would build upon. It had all the capabilities of the first version but with the addition some new HTML tags. Some of
-          the new tags that were introduced were the <code>&lt;HEAD&gt;</code>, <code>&lt;BODY&gt;</code>, <code>&lt;TABLE&gt;</code> and the <code>&lt;LINK&gt;</code> tag which gave the ability to link to other documents. During this time the W3C
-          (World Wide Web Consortium) was formed to ensure that a uniform standard was established and maintained among the web browsers.
-        </p>
-        <p>
-          HTML&nbsp;3.2 was developed in 1997. As with all versions of HTML there were improvements on various aspects of the language. Support CSS embedded in HTML was added which allowed web developers to have greater freedom when it came to
-          styling a website. Some notable HTML tags that were introduced were the <code>&lt;DIV&gt;</code> <code>&lt;TITLE&gt;</code>, <code>&lt;SCRIPT&gt;</code> and <code>&lt;STYLE&gt;</code> tags which were reserved for use in the future with
-          scripting languages and stylesheets respectively.
-        </p>
-        <p>
-          HTML&nbsp;4.01 was released in 1999 and with it came support of external style sheets. This was a very important development in terms of web-design. Support for style sheets meant that CSS could be applied to the entire website rather than
-          for each individual HTML file. Some of the tags that were introduced in 4.01 were the <code>&lt;BUTTON&gt;</code>, <code>&lt;IFRAME&gt;</code> and the <code>&lt;SPAN&gt;</code> tags.
-        </p>
-        <p>
-          HTML&nbsp;5 was initially released in 2008 but in 2014 there was a major update and a W3C recommendation. With this new iteration came a few changes. All the previous versions of HTML used tags in uppercase, but now with HTML 5 lowercase
-          for tags can be used. HTML 5 added various additional tags such as <code>&lt;article&gt;</code>, <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code> and quite a few
-          others. Since 2014 there have been two new HTML&nbsp;5 versions, HTML&nbsp;5.1 and 5.2.
-        </p>
-      </section>
+* {
+  text-decoration: none;
+  box-sizing: border-box;
+}
 
-      <section id="aboutcss">
-        <div class="subheading">
-          Evolution of <span class="titlecss">{css}</span>
-        </div>
+body {
+  background-color: LightSteelBlue;
+  min-height: 100%;
+}
 
-        <figure class=HåkonImage>
-          <img id=imageHåkon src="images/HåkonWiumLie.jpg" alt="Håkon Wium Lie">
-          <figcaption>
-            Håkon Wium Lie&nbsp;|&nbsp;<span class="cite">Photo by Franco Folini / Wikimedia</span>
-          </figcaption>
-        </figure>
+header {
+  font-size: 20rem;
+  font-family: "Calibri", "Arial";
+  display: flex;
+  justify-content: space-between;
+  background-color: DarkSlateBlue;
+  padding: 30rem 20.8%;
+  align-items: center;
+}
 
-        <p>
-          Like with HTML, there have been many different iterations of CSS through the past few years. CSS (Cascading Style Sheets) is used to style a HTML webpage. There are three different CSS standards, from CSS to CSS3. Håkon Wium Lie first
-          proposed CSS on the 10th of October, 1994 and the first draft of CSS is still available <a href="https://www.w3.org/People/howcome/p/cascade.html" target="_blank">here</a>. During this time, he was working at CERN with Berners-Lee. Bert
-          Bos joined Wium Lie in developing CSS. Bos at that time been creating a customisable browser with style sheets called Argo. Many features from Argo eventually made their way into CSS.
-        </p>
-        <p>
-          In 1996, CSS1 became an official W3C recommendation. This version of CSS had the ability to change the typeface, the colour of text, backgrounds, and other elements such as the spacing between the words and letters, how text, images and
-          tables are aligned and introduced the ability to change the borders, margins and positioning of elements as well as many other capabilities.
-        </p>
-        <p>
-          CSS2 was developed as a W3C recommendation in May of 1998. This version of CSS featured new capabilities such as absolute, fixed, relative positioning and also the z-index. CSS2 also allowed various media types and different font options
-          such as shadow.
-        </p>
-        <p>
-          It took a considerable amount of time for CSS2.1 to be published as a W3C after going to and from working draft status to candidate recommendation status. CSS2.1 fixed errors that were present in CSS2 and also removed some redundant
-          features. CSS2.1 was finally published as a W3C recommendation on the 7th of June 2011.
-        </p>
-        <p>
-          For CSS3 the W3C introduced modules, stating that it was simpler to update individual parts of CSS rather than to add many updates into one single specification. There are now many modules in the CSS specification such as: css3-backround,
-          css3-color, css-fonts-3 and css3-box, among others.
-        </p>
-      </section>
+header ul li {
+  float: left;
+  margin: 0rem 0rem 0rem 35rem;
+}
 
+header ul li a {
+  color: white;
+  transition: color linear 0.60s;
+  display: block;
+}
 
+header ul li a:hover {
+  color: orange;
+}
 
-      <div class="accordion" id="tags">
-        <input type="checkbox" name="example_accordion" id="htmltable" class="accordion__input">
-        <label for="htmltable" class="accordion__label" id="htmllabel">Explanation of html tags used in this assignment</label>
-        <div class="accordion__content">
+.logo {
+  color: white;
+  margin-right: auto;
+}
 
-          <section>
-            <table class="explanation">
-              <tr>
-                <th>Tag</th>
-                <th>Purpose</th>
-                <th>Use</th>
-                <th>Attributes</th>
-                <th>Browser&nbsp;Support</th>
-              </tr>
-              <tr>
-                <td>&lt;!--...--&gt;</td>
-                <td>Allows comments in the HTML code but unseen in the browser.</td>
-                <td>Code can be explained in comments as an aide-mémoire.</td>
-                <td>This tag does not support attributes.</td>
-                <td>Chrome<br>Edge<br>Firefox<br>Opera<br>Safari</td>
-              </tr>
-              <tr>
-                <td>&lt;a&gt;</td>
-                <td>The anchor tag and it represents a hyperlink.</td>
-                <td>Links images, videos and links to other websites.</td>
-                <td>Its most important attribute is href, pointing to a link’s destination.</td>
-                <td>Chrome<br>Edge<br>Firefox<br>Opera<br>Safari</td>
-              </tr>
-              <tr>
-                <td>&lt;article&gt;</td>
-                <td>Used for content specific to one topic.</td>
-                <td>An article should be able to make sense out of context.</td>
-                <td>Has access to global and event attributes.</td>
-                <td>Chrome&nbsp;6.0<br>Edge&nbsp;9.0<br>Firefox&nbsp;4.0<br>Opera 11.1<br>Safari&nbsp;5.0</td>
-              </tr>
-              <tr>
-                <td>&lt;body&gt;</td>
-                <td>Represents the main content of the page.</td>
-                <td>Contains all the other tags in a page.</td>
-                <td>Has access to global and event attributes.</td>
-                <td>Chrome<br>Edge<br>Firefox<br>Opera<br>Safari</td>
-              </tr>
-              <tr>
-                <td>&lt;br&gt;</td>
-                <td>Adds a line break.</td>
-                <td>Can be used to send a sentence onto the next line.</td>
-                <td>Has access to global and event attributes.</td>
-                <td>Chrome<br>Edge<br>Firefox<br>Opera<br>Safari</td>
-              </tr>
-              <tr>
-                <td>&lt;code&gt;</td>
-                <td>Defines a piece of computer code on a page.</td>
-                <td>Useful when writing code in a webpage.</td>
-                <td>Has access to global and event attributes.</td>
-                <td>Chrome<br>Edge<br>Firefox<br>Opera<br>Safari</td>
-              </tr>
-              <tr>
-                <td>&lt;div&gt;</td>
-                <td>Creates a division or section in a page.</td>
-                <td>Used to divide page into separate sections.</td>
-                <td>Has access to global and event attributes.</td>
-                <td>Chrome<br>Edge<br>Firefox<br>Opera<br>Safari</td>
-              </tr>
-              <tr>
-                <td>&lt;figcaption&gt;</td>
-                <td>Defines self-contained content, such as photos or code.</td>
-                <td>Useful when you want to caption a photo.</td>
-                <td>Has access to global and event attributes.</td>
-                <td>Chrome 6.0<br>Edge 9.0<br>Firefox 4.0<br>Opera 11.1<br>Safari 5.0</td>
-              </tr>
-              <tr>
-                <td>&lt;figure&gt;</td>
-                <td>Creates a division or section in a page.</td>
-                <td>Used to contain content relating main topic.</td>
-                <td>Has access to global and event attributes.</td>
-                <td>Chrome&nbsp;8.0<br>Edge&nbsp;9.0<br>Firefox&nbsp;4.0<br>Opera&nbsp;11.0<br>Safari&nbsp;5.1</td>
-              </tr>
-              <tr>
-                <td>&lt;footer&gt;</td>
-                <td>Defines a footer in the page.</td>
-                <td>Defines a footer in the page.</td>
-                <td>Has access to global and event attributes.</td>
-                <td>Chrome&nbsp;5.0<br>Edge&nbsp;9.0<br>Firefox&nbsp;4.0<br>Opera&nbsp;11.1<br>Safari&nbsp;5.0</td>
-              </tr>
-              <tr>
-                <td>&lt;head&gt;</td>
-                <td>Contains all the metadata.</td>
-                <td>Inside this element you can change the title of the page, link style sheets and what character set is being used.</td>
-                <td>Has access to global and event attributes.</td>
-                <td>Chrome<br>Edge<br>Firefox<br>Opera<br>Safari</td>
-              </tr>
-              <tr>
-                <td>&lt;header&gt;</td>
-                <td>Contains elements wanted at the top of the page.</td>
-                <td>Can link to other pages on the website and can place logo here.</td>
-                <td>Has access to global and event attributes.</td>
-                <td>Chrome&nbsp;5.0<br>Edge&nbsp;9.0<br>Firefox&nbsp;4.0<br>Opera&nbsp;11.1<br>Safari&nbsp;5.0</td>
-              </tr>
-              <tr>
-                <td>&lt;html&gt;</td>
-                <td>The root of the document.</td>
-                <td>The container of every other element.</td>
-                <td>Has access to global and event attributes.</td>
-                <td>Chrome<br>Edge<br>Firefox<br>Opera<br>Safari</td>
-              </tr>
-              <tr>
-                <td>&lt;iframe&gt;</td>
-                <td>Defines an inline frame.</td>
-                <td>Used to embed another webpage or video inside the document.</td>
-                <td>Has access to global and event attributes.</td>
-                <td>Chrome<br>Edge<br>Firefox<br>Opera<br>Safari</td>
-              </tr>
-              <tr>
-                <td>&lt;img&gt;</td>
-                <td>Used to link an image into a document.</td>
-                <td>Allows an image to be added to a webpage.</td>
-                <td>Requires two attributes, the src (source) and alt (alternate). The src is the path to the image and alt is what is displayed if the image can not be displayed.</td>
-                <td>Chrome<br>Edge<br>Firefox<br>Opera<br>Safari</td>
-              </tr>
-              <tr>
-                <td>&lt;li&gt;</td>
-                <td>Defines a list item.</td>
-                <td>Creates a list in a website, can also be used when make a navigation bar.</td>
-                <td>Has access to global and event attributes.</td>
-                <td>Chrome<br>Edge<br>Firefox<br>Opera<br>Safari</td>
-              </tr>
-              <tr>
-                <td>&lt;link&gt;</td>
-                <td>Links to external resources like Css or Js files.</td>
-                <td>Most often used to link to an external style sheet.</td>
-                <td>Has access to global and event attributes.</td>
-                <td>Chrome<br>Edge<br>Firefox<br>Opera<br>Safari</td>
-              </tr>
-              <tr>
-                <td>&lt;meta&gt;</td>
-                <td>Defines information about a document.</td>
-                <td>Used to specify the character set being used, a description of the page and viewport settings.</td>
-                <td>Has access to global and event attributes.</td>
-                <td>Chrome<br>Edge<br>Firefox<br>Opera<br>Safari</td>
-              </tr>
-              <tr>
-                <td>&lt;nav&gt;</td>
-                <td>Defines navigation links.</td>
-                <td>Used to group together navigational links to other parts of your website.</td>
-                <td>Has access to global and event attributes.</td>
-                <td>Chrome&nbsp;5.0<br>Edge&nbsp;9.0<br>Firefox&nbsp;4.0<br>Opera&nbsp;11.1<br>Safari&nbsp;5.0</td>
-              </tr>
-              <tr>
-                <td>&lt;ol&gt;</td>
-                <td>Defines an ordered list.</td>
-                <td>Used for example, when a list is to be numbered for a recipe.</td>
-                <td>Has access to global and event attributes.</td>
-                <td>Chrome<br>Edge 9.0<br>Firefox<br>Opera<br>Safari</td>
-              </tr>
-              <tr>
-                <td>&lt;p&gt;</td>
-                <td>Defines a paragraph.</td>
-                <td>Used to split up content into separate paragraphs.</td>
-                <td>Has access to global and event attributes.</td>
-                <td>Chrome<br>Edge<br>Firefox<br>Opera<br>Safari</td>
-              </tr>
-              <tr>
-                <td>&lt;script&gt;</td>
-                <td>Embeds JavaScript into a document.</td>
-                <td>Can contain code that is to be executed.</td>
-                <td>Has access to global and event attributes.</td>
-                <td>Chrome<br>Edge<br>Firefox<br>Opera<br>Safari</td>
-              </tr>
-              <tr>
-                <td>&lt;section&gt;</td>
-                <td>Defines a section in the document.</td>
-                <td>Used to create sections within a page.</td>
-                <td>Has access to global and event attributes.</td>
-                <td>Chrome&nbsp;5.0<br>Edge&nbsp;9.0<br>Firefox&nbsp;4.0<br>Opera&nbsp;11.5<br>Safari&nbsp;5.0</td>
-              </tr>
-              <tr>
-                <td>&lt;span&gt;</td>
-                <td>This is an inline container.</td>
-                <td>Allows different styling on a word in comparison to the rest of the sentence.</td>
-                <td>Has access to global and event attributes.</td>
-                <td>Chrome<br>Edge<br>Firefox<br>Opera<br>Safari</td>
-              </tr>
-              <tr>
-                <td>&lt;table&gt;</td>
-                <td>Defines a table in the document.</td>
-                <td>Used to display data.</td>
-                <td>Has access to global and event attributes.</td>
-                <td>Chrome<br>Edge<br>Firefox<br>Opera<br>Safari</td>
-              </tr>
-              <tr>
-                <td>&lt;title&gt;</td>
-                <td>Defines the title of the document which will be shown in the page's tab in the browser.</td>
-                <td>Required in HTML documents, as it is used by the search engine to decide in what order to list the page in search results.</td>
-                <td>Has access to global and event attributes.</td>
-                <td>Chrome<br>Edge<br>Firefox<br>Opera<br>Safari</td>
-              </tr>
-              <tr>
-                <td>&lt;ul&gt;</td>
-                <td>Defines an unordered list.</td>
-                <td>Useful when creating a navigation bar or making a list of points in no particular order.</td>
-                <td>Has access to global and event attributes.</td>
-                <td>Chrome<br>Edge<br>Firefox<br>Opera<br>Safari</td>
-              </tr>
-            </table>
-          </section>
+.content {
+  max-width: 1200rem;
+  font-size: 18rem;
+  background-color: white;
+  margin: auto;
+  padding: 40rem 40rem 40rem 40rem;
+  font-family: "Calibri", "Arial";
+  height: 100%;
+  text-align: justify;
+}
 
-        </div>
-      </div>
+.title {
+  font-size: 30rem;
+}
 
-      <div class="accordion">
-        <input type="checkbox" name="example_accordion" id="csstable" class="accordion__input">
-        <label for="csstable" class="accordion__label">Explanation of css styles used in this assignment</label>
-        <div class="accordion__content">
+span.titlehtml {
+  color: #E54C21;
+}
 
-          <section id="tags">
-            <table class="explanation">
-              <tr>
-                <th>Styles</th>
-                <th>Purpose</th>
-                <th></th>
-                <th></th>
-                <th>Browser&nbsp;Support</th>
-              </tr>
-              <tr>
-                <td>scroll-behavior</td>
-                <td>Changes how the website scrolls when a link within a scrollable box is clicked.</td>
-                <td></td>
-                <td></td>
-                <td>Chrome 61.0<br>Edge 79.0<br>Firefox 36.0<br>Opera 48.0<br>Safari 14.0</td>
-              </tr>
-              <tr>
-                <td>font-size</td>
-                <td>Changes the size of the font.</td>
-                <td></td>
-                <td></td>
-                <td>Chrome 1.0<br>Edge 5.5<br>Firefox 1.0<br>Opera 7.0<br>Safari 1.0</td>
-              </tr>
-              <tr>
-                <td>text-decoration</td>
-                <td>Changes the decoration of the text.</td>
-                <td></td>
-                <td></td>
-                <td>Chrome 1.0<br>Edge 3.0<br>Firefox&nbsp;1.0<br>Opera 3.5<br>Safari&nbsp;1.0</td>
-              </tr>
-              <tr>
-                <td>box-sizing</td>
-                <td>Changes how the widths and heights of an element are calculated. Whether they should take padding and borders into an account.</td>
-                <td></td>
-                <td></td>
-                <td>Chrome 10.0<br>Edge 8.0<br>Firefox 29.0<br>Opera 9.5<br>Safari 5.1</td>
-              </tr>
-              <tr>
-                <td>background-color</td>
-                <td>Changes the background colour of an element.</td>
-                <td></td>
-                <td></td>
-                <td>Chrome 1.0<br>Edge 4.0<br>Firefox 1.0<br>Opera 3.5<br>Safari 1.0</td>
-              </tr>
-              <tr>
-                <td>min-height</td>
-                <td>Defines the minimum height that an element has to be.</td>
-                <td></td>
-                <td></td>
-                <td>Chrome 1.0<br>Edge 7.0<br>Firefox 3.0<br>Opera<br>Safari</td>
-              </tr>
-              <tr>
-                <td>font-family</td>
-                <td>Changes the font of an element.</td>
-                <td></td>
-                <td></td>
-                <td>Chrome 1.0<br>Edge 4.0<br>Firefox 1.0<br>Opera 3.5<br>Safari 1.0</td>
-              </tr>
-              <tr>
-                <td>display</td>
-                <td>Changes the display behaviour of an element.</td>
-                <td></td>
-                <td></td>
-                <td>Chrome 4.0<br>Edge 8.0<br>Firefox 3.0<br>Opera 7.0<br>Safari 3.1</td>
-              </tr>
-              <tr>
-                <td>justify-content</td>
-                <td>Changes how elements are aligned along the main axis in a flexible container.</td>
-                <td></td>
-                <td></td>
-                <td>Chrome&nbsp;29.0<br>Edge&nbsp;11.0<br>Firefox&nbsp;28.0<br>Opera&nbsp;17.0<br>Safari&nbsp;9.0</td>
-              </tr>
-              <tr>
-                <td>padding</td>
-                <td>Changes the spacing between its content and the border of the element.</td>
-                <td></td>
-                <td></td>
-                <td>Chrome&nbsp;1.0<br>Edge&nbsp;4.0<br>Firefox&nbsp;1.0<br>Opera&nbsp;3.5<br>Safari&nbsp;1.0</td>
-              </tr>
-              <tr>
-                <td>align-items</td>
-                <td>Changes the default alignment of items inside flexible containers.</td>
-                <td></td>
-                <td></td>
-                <td>Chrome 21.0<br>Edge 11.0<br>Firefox 22.0<br>Opera 12.1<br>Safari 9.0</td>
-              </tr>
-              <tr>
-                <td>float</td>
-                <td>Changes whether an element floats left, right or not at all.</td>
-                <td></td>
-                <td></td>
-                <td>Chrome&nbsp;1.0<br>Edge&nbsp;4.0<br>Firefox&nbsp;1.0<br>Opera&nbsp;7.0<br>Safari&nbsp;1.0</td>
-              </tr>
-              <tr>
-                <td>margin</td>
-                <td>Changes the margins of an element.</td>
-                <td></td>
-                <td></td>
-                <td>Chrome 1.0<br>Edge 6.0<br>Firefox 1.0<br>Opera 3.5<br>Safari 1.0</td>
-              </tr>
-              <tr>
-                <td>color</td>
-                <td>Changes the colour of text.</td>
-                <td></td>
-                <td></td>
-                <td>Chrome 1.0<br>Edge 3.0<br>Firefox 1.0<br>Opera 3.5<br>Safari 1.0</td>
-              </tr>
-              <tr>
-                <td>transition</td>
-                <td>Shorthand for property, duration, timing-function and transition-delay.</td>
-                <td></td>
-                <td></td>
-                <td>Chrome 26.0<br>Edge 10.0<br>Firefox 16.0<br>Opera 12.1<br>Safari 6.1</td>
-              </tr>
-              <tr>
-                <td>max-width</td>
-                <td>Defines the maximum height that an element can be.</td>
-                <td></td>
-                <td></td>
-                <td>Chrome 1.0<br>Edge 7.0<br>Firefox 1.0<br>Opera 7.0<br>Safari 2.0</td>
-              </tr>
-              <tr>
-                <td>height</td>
-                <td>Defines the height of an element.</td>
-                <td></td>
-                <td></td>
-                <td>Chrome 1.0<br>Edge 4.0<br>Firefox 1.0<br>Opera 7.0<br>Safari 1.0</td>
-              </tr>
-              <tr>
-                <td>text-align</td>
-                <td>Specifies the alignment of text in an element.</td>
-                <td></td>
-                <td></td>
-                <td>Chrome 1.0<br>Edge 3.0<br>Firefox 1.0<br>Opera 3.5<br>Safari 1.0</td>
-              </tr>
-              <tr>
-                <td>line-height</td>
-                <td>Defines the height of a line.</td>
-                <td></td>
-                <td></td>
-                <td>Chrome&nbsp;1.0<br>Edge&nbsp;4.0<br>Firefox&nbsp;1.0<br>Opera&nbsp;7.0<br>Safari&nbsp;1.0</td>
-              </tr>
-              <tr>
-                <td>box-shadow</td>
-                <td>Adds a shadow to an elements.</td>
-                <td></td>
-                <td></td>
-                <td>Chrome 10.0<br>Edge 9.0<br>Firefox 4.0<br>Opera 10.5<br>Safari 5.1</td>
-              </tr>
-              <tr>
-                <td>font-style</td>
-                <td>Defines the font style of the text.</td>
-                <td></td>
-                <td></td>
-                <td>Chrome 1.0<br>Edge 4.0<br>Firefox 1.0<br>Opera 3.5<br>Safari 1.0</td>
-              </tr>
-              <tr>
-                <td>vertical-align</td>
-                <td>Defines the vertical alignment of the element.</td>
-                <td></td>
-                <td></td>
-                <td>Chrome 1.0<br>Edge 4.0<br>Firefox 1.0<br>Opera 4.0<br>Safari 1.0</td>
-              </tr>
-              <tr>
-                <td>white-space</td>
-                <td>Defines how the white space of an element is handled.</td>
-                <td></td>
-                <td></td>
-                <td>Chrome&nbsp;1.0<br>Edge&nbsp;8.0<br>Firefox&nbsp;3.5<br>Opera&nbsp;9.5<br>Safari&nbsp;3.0</td>
-              </tr>
-              <tr>
-                <td>border-radius</td>
-                <td>Defines the radius of an elements border corners.</td>
-                <td></td>
-                <td></td>
-                <td>Chrome 5.0<br>Edge 9.0<br>Firefox 4.0<br>Opera 10.5<br>Safari 5.0</td>
-              </tr>
-              <tr>
-                <td>position</td>
-                <td>Specifies which positioning method an element will use.</td>
-                <td></td>
-                <td></td>
-                <td>Chrome 1.0<br>Edge 7.0<br>Firefox 1.0<br>Opera 4.0<br>Safari 1.0</td>
-              </tr>
-              <tr>
-                <td>transform</td>
-                <td>Allows for the change the rotation, scale, skew, position of elements.</td>
-                <td></td>
-                <td></td>
-                <td>Chrome 36.0<br>Edge 12.0<br>Firefox 16.0<br>Opera 23.0<br>Safari 9.0</td>
-              </tr>
-              <tr>
-                <td>top</td>
-                <td>Specifies the vertical position of a positioned element.</td>
-                <td></td>
-                <td></td>
-                <td>Chrome 1.0<br>Edge 5.0<br>Firefox 1.0<br>Opera 6.0<br>Safari 1.0</td>
-              </tr>
-              <tr>
-                <td>right</td>
-                <td>Specifies the horizontal position of a positioned element.</td>
-                <td></td>
-                <td></td>
-                <td>Chrome 1.0<br>Edge 5.5<br>Firefox 1.0<br>Opera 5.0<br>Safari 1.0</td>
-              </tr>
-              <tr>
-                <td>background-image</td>
-                <td>Sets the background image of an element.</td>
-                <td></td>
-                <td></td>
-                <td>Chrome 1.0<br>Edge 4.0<br>Firefox 1.0<br>Opera 3.5<br>Safari 1.0</td>
-              </tr>
-              <tr>
-                <td>background-size</td>
-                <td>Defines the size of the background image of an element.</td>
-                <td></td>
-                <td></td>
-                <td>Chrome 4.0<br>Edge 9.0<br>Firefox 4.0<br>Opera 10.5<br>Safari 4.1</td>
-              </tr>
-              <tr>
-                <td>border-collapse</td>
-                <td>Specifies whether a table should all collapse into a single border, or if it should be separated as standard HTML.</td>
-                <td></td>
-                <td></td>
-                <td>Chrome 1.0<br>Edge 5.0<br>Firefox 1.0<br>Opera 4.0<br>Safari 1.2</td>
-              </tr>
-              <tr>
-                <td>overflow</td>
-                <td>Specifies what happens with content that overflows an elements box.</td>
-                <td></td>
-                <td></td>
-                <td>Chrome 1.0<br>Edge 4.0<br>Firefox 1.0<br>Opera 7.0<br>Safari 4.0</td>
-              </tr>
-              <tr>
-                <td>list-style</td>
-                <td>Defines what way a list should be displayed.</td>
-                <td></td>
-                <td></td>
-                <td>Chrome 1.0<br>Edge 4.0<br>Firefox 1.0<br>Opera 7.0<br>Safari 4.0</td>
-              </tr>
-              <tr>
-                <td>font-weight</td>
-                <td>Defines what way a list should be displayed.</td>
-                <td></td>
-                <td></td>
-                <td>Chrome 2.0<br>Edge 4.0<br>Firefox 1.0<br>Opera 3.5<br>Safari 1.3</td>
-              </tr>
-            </table>
-          </section>
+span.titlecss {
+  color: #264DE4;
+}
 
-        </div>
-      </div>
+.main {
+  max-width: 1200rem;
+  margin: auto;
+}
 
-    </div>
+.subheading {
+  font-size: 23rem;
+  margin-top: 40rem;
+  margin-bottom: 15rem;
+}
 
-    <div class="accordion" id="references">
-      <input type="checkbox" name="example_accordion" id=referencesdropdown class="accordion__input">
-      <label for="referencesdropdown" class="accordion__label">References</label>
-      <div class="accordion__content">
-        <section>
-          <table class="referencestable">
-            <tr>
-              <th>References for the information that was used in this assignment</th>
-            </tr>
-            <tr>
-              <td>
-                Arnoud Engelfriet (1997). Introduction to Wilbur. [online] Htmlhelp.com.<br>Available at: <a href="https://htmlhelp.com/reference/wilbur/intro.html" target="_blank">https://htmlhelp.com/reference/wilbur/intro.html</a>&nbsp;[Accessed
-                27 Sep. 2021].
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Berners-Lee, T. (1990). Information Management: A Proposal. [online] CERN.<br>Available at: <a href="https://www.w3.org/History/1989/proposal.html" target="_blank">https://www.w3.org/History/1989/proposal.html</a>&nbsp;[Accessed
-                27 Sep. 2021].
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Berners-Lee, T. (1991). Re: SGML/HTML docs, X Browser. [online] W3.org.<br>Available at: <a href="https://lists.w3.org/Archives/Public/www-talk/1991NovDec/0020.html"
-                  target="_blank">https://lists.w3.org/Archives/Public/www-talk/1991NovDec/0020.html</a>&nbsp;[Accessed 27 Sep. 2021].
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Berners-Lee, T. (1991). www-talk from September to October 1991: Re: status. Re: X11 BROWSER for WWW. [online] W3.org.<br>Available at: <a href="https://lists.w3.org/Archives/Public/www-talk/1991SepOct/0003.html"
-                  target="_blank">https://lists.w3.org/Archives/Public/www-talk/1991SepOct/0003.html</a>&nbsp;[Accessed 27 Sep. 2021].
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Berners-Lee, T. (1992). Tags used in HTML. [online] W3.org.<br>Available at: <a href="https://www.w3.org/History/19921103-hypertext/hypertext/WWW/MarkUp/Tags.html"
-                  target="_blank">https://www.w3.org/History/19921103-hypertext/hypertext/WWW/MarkUp/Tags.html</a>&nbsp;[Accessed 27 Sep. 2021].
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Berners-Lee, T. and Connolly, D. (1993). Hypertext Markup Language (HTML): A Representation of Textual Information and Meta Information for Retrieval and Interchange. [online] W3.org.<br>Available at: <a
-                  href="https://www.w3.org/MarkUp/draft-ietf-iiir-html-01.txt" target="_blank">https://www.w3.org/MarkUp/draft-ietf-iiir-html-01.txt</a>&nbsp;[Accessed 27 Sep. 2021].
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Berners-Lee, T. and Connolly, D. (1995). Hypertext Markup Language – 2.0. [online] Ietf.org.<br>Available at: <a href="https://datatracker.ietf.org/doc/html/rfc1866"
-                  target="_blank">https://datatracker.ietf.org/doc/html/rfc1866</a>&nbsp;[Accessed 27 Sep. 2021].
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Bos, B. (2016). A brief history of CSS until 2016. [online] W3.org.<br>Available at: <a href="https://www.w3.org/Style/CSS20/history.html" target="_blank">https://www.w3.org/Style/CSS20/history.html</a>&nbsp;[Accessed 22 Oct.
-                2021].
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Internet Engineering Task Force (2014). Open Web Platform Milestone Achieved with HTML5 Recommendation. [online] W3.org.<br>Available at: <a
-                  href="https://web.archive.org/web/20070809234115/https://www.w3.org/People/Raggett/book4/ch02.html" target="_blank">https://web.archive.org/web/20070809234115/https://www.w3.org/People/Raggett/book4/ch02.html</a>&nbsp;[Accessed 27
-                Sep.2021].
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Pedamkar, P. (2019). Versions of Html | Significance of Various HTML Versions. [online] EDUCBA. <br> Available at: <a href="https://www.educba.com/versions-of-html/"
-                  target="_blank">https://www.educba.com/versions-of-html/</a>&nbsp;[Accessed 6
-                Oct. 2021].
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Raggett, D. (1998). Raggett on HTML 4. [online] Archive.org.<br>Available at: <a href="https://www.w3.org/2014/10/html5-rec.html.en" target="_blank">https://www.w3.org/2014/10/html5-rec.html.en</a>&nbsp;[Accessed 27 Sep. 2021].
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Rinehart, M. (2012). HTML Tag History. [online] Martinrinehart.com.<br>Available at:<a href="http://www.martinrinehart.com/frontend-engineering/engineers/html/html-tag-history.html"
-                  target="_blank">http://www.martinrinehart.com/frontend-engineering/engineers/html/html-tag-history.html</a>&nbsp;[Accessed 6 Oct. 2021].
-              </td>
-            </tr>
-            <tr>
-              <td>
-                W3schools. (2021). HTML History. [online]<br>Available at: <a href="https://www.w3schools.in/html-tutorial/history/" target="_blank">https://www.w3schools.in/html-tutorial/history/</a>&nbsp;[Accessed 6 Oct. 2021].
-              </td>
-            </tr>
-            <tr>
-              <td>
-                W3schools.com. (2021). HTML Element Reference. [online]<br>Available at: <a href="https://www.w3schools.com/tags/default.asp" target="_blank">https://www.w3schools.com/tags/default.asp</a>&nbsp;[Accessed 22 Oct. 2021].
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Wells, C.J. (2018). A Brief History of CSS. [online] Technologyuk.net.<br>Available at: <a href="https://www.technologyuk.net/computing/website-development/introduction-to-css/introduction.shtml"
-                  target="_blank">https://www.technologyuk.net/computing/website-development/introduction-to-css/introduction.shtml</a>&nbsp;[Accessed 23 Oct. 2021].
-              </td>
-            </tr>
-            <tr>
-              <td>
-                World Wide Web Consortium (1997). HTML 3.2 Reference Specification. [online] W3.org.<br>Available at: <a href="https://www.w3.org/TR/2018/SPSD-html32-20180315/"
-                  target="_blank">https://www.w3.org/TR/2018/SPSD-html32-20180315/</a>&nbsp;[Accessed 27 Sep. 2021].
-              </td>
-            </tr>
-            <tr>
-              <td>
-                World Wide Web Consortium (1997). HTML 4.01 Specification. [online] W3.org.<br>Available at: <a href="https://www.w3.org/TR/html40/" target="_blank">https://www.w3.org/TR/html40/</a>&nbsp;[Accessed 27 Sep. 2021].
-              </td>
-            </tr>
-            <tr>
-              <td>
-                World Wide Web Consortium (1999). Index of the HTML 4 Elements. [online] W3.org.<br>Available at: <a href="https://www.w3.org/TR/1999/REC-html401-19991224/index/elements"
-                  target="_blank">https://www.w3.org/TR/1999/REC-html401-19991224/index/elements</a>&nbsp;[Accessed 27 Sep. 2021].
-              </td>
-            </tr>
-            <tr>
-              <td>
-                World Wide Web Consortium (2016). HTML 5.1 is a W3C Recommendation | W3C News. [online] W3.org.<br>Available at: <a href="https://www.w3.org/blog/news/archives/5932"
-                  target="_blank">https://www.w3.org/blog/news/archives/5932</a>&nbsp;[Accessed 27 Sep. 2021].
-              </td>
-            </tr>
-            <tr>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-            </tr>
+.content p {
+  margin-bottom: 15rem;
+  line-height: 27rem;
+}
 
-          </table>
-        </section>
-      </div>
-    </div>
+.content p a {
+  color: blue;
+}
 
+.content p a:hover {
+  text-decoration: underline;
+}
 
+.content p a:visited {
+  color: #826d8c;
+}
 
-  </div> // end of class content
+.timLeeImage {
+  float: right;
+  max-width: 50%;
+  margin-left: 25rem;
+  margin-bottom: 10rem;
+  margin-top: 8rem;
+}
 
-  <footer>
-    <p class="copyright">&copy; Copyright 2021&nbsp;|&nbsp;Cúán Tilson</p>
-    <a class="backtotop" href="#top">Back To Top</a>
-  </footer>
+#imageTim {
+  box-shadow: 2px 5px 12px rgba(32, 32, 32, .3);
+  max-width: 100%;
+}
 
-</body>
+figcaption {
+  font-size: 16rem;
+  color: black;
+}
 
-</html>
+.cite {
+  font-style: italic;
+}
 
-<!--
-HTML that I need to add in:
-Headerelements: <h1>, <h2>, <h3>, <h4>, <h5>, <h6>
-Formatting elements: <strong>, <em>
-Quotes: <q>, <blockquote>
-Abbreviations: <abbr>
-Forms: <form>, <input>, <textarea>
--->
+.HåkonImage {
+  float: right;
+  max-width: 35%;
+  margin-left: 25rem;
+  margin-top: 8rem;
+}
+
+#imageHåkon {
+  box-shadow: 2px 5px 12px rgba(32, 32, 32, .3);
+  max-width: 100%;
+}
+
+code {
+  font-family: "Courier";
+  background-color: #eee;
+  border: 1rem solid #ebeced;
+  border-radius: 3rem;
+  display: inline-block;
+  line-height: 21rem;
+  max-width: 100%;
+  padding: 0 3rem;
+  vertical-align: baseline;
+  white-space: pre-wrap;
+}
+
+#aboutcss {
+  margin-bottom: 50rem;
+}
+
+.accordion {
+  max-width: 1120rem;
+  margin-bottom: 40rem;
+}
+
+.accordion__label {
+  background: DarkSlateBlue;
+  padding: 15rem;
+  max-width: 500rem;
+  font-size: 23rem;
+  display: block;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  transition: color linear 0.60s;
+  border-radius: 12rem 12rem;
+  box-shadow: 2px 5px 12px rgba(32, 32, 32, .3);
+}
+
+label:hover {
+  color: orange;
+}
+
+.accordion__label::after {
+  content: "";
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 5rem;
+  min-width: 30rem;
+  height: 30rem;
+  background-image: url(../images/chevron-down.svg);
+  background-size: contain;
+  transition: transform 0.4s;
+}
+
+.accordion__content {
+  margin-top: 20rem;
+  display: none;
+}
+
+.accordion__input {
+  display: none;
+}
+
+.accordion__input:checked~.accordion__content {
+  display: block;
+}
+
+.accordion__input:checked~.accordion__label::after {
+  transform: translateY(-50%) rotate(0.5turn);
+}
+
+.explanation {
+  font-family: "Calibri", "Arial";
+  max-width: 1120rem;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-radius: 12rem 12rem 0rem 0rem;
+  overflow: hidden;
+  box-shadow: 2px 5px 12px rgba(32, 32, 32, .3);
+  background: #fafafafa;
+  text-align: center;
+  margin: auto auto 60rem auto;
+}
+
+.explanation th, td {
+  padding: 12rem 15rem;
+}
+
+.explanation th {
+  font-size: 20rem;
+  font-weight: bold;
+  background: DarkSlateBlue;
+  color: white;
+}
+
+.explanation th:nth-child(2), th:nth-child(3), th:nth-child(4), th:nth-child(5) {
+  text-align: left;
+}
+
+.explanation td {
+  height: auto;
+}
+
+.explanation td:nth-child(1) {
+  font-size: 22rem;
+}
+
+.explanation td:nth-child(1), td:nth-child(5) {
+  width: 150rem;
+}
+
+.explanation td:nth-child(3), td:nth-child(4) {
+  width: 185rem;
+}
+
+.explanation td:nth-child(2), td:nth-child(3), td:nth-child(4), td:nth-child(5) {
+  text-align: left;
+}
+
+.explanation tr:nth-child(odd) {
+  background-color: #eee;
+}
+
+.referencestable {
+  font-family: "Calibri", "Arial";
+  max-width: 1120rem;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-radius: 12rem 12rem 0rem 0rem;
+  overflow: hidden;
+  box-shadow: 2px 5px 12px rgba(32, 32, 32, .3);
+  background: #fafafafa;
+  margin: auto auto 60rem auto;
+  text-align: left;
+}
+
+.referencestable th {
+  font-size: 20rem;
+  font-weight: bold;
+  background: DarkSlateBlue;
+  color: white;
+}
+
+.referencestable th, td {
+  padding: 12rem 15rem;
+}
+
+.referencestable tr:nth-child(odd) {
+  background-color: #eee;
+}
+
+.referencestable td {
+  display: list-item;
+  list-style-type: disc;
+  list-style-position: outside;
+  max-width: 1120rem;
+  margin-left: 35rem;
+}
+
+.referencestable a {
+  color: black;
+  font-weight: bold;
+}
+
+.referencestable a:hover {
+  text-decoration: underline;
+}
+
+.referencestable a:visited {
+  color: #826d8c;
+}
+
+footer {
+  font-size: 20rem;
+  font-family: "Calibri", "Arial";
+  display: flex;
+  justify-content: space-between;
+  background-color: DarkSlateBlue;
+  padding: 30rem 20.8%;
+  align-items: center;
+  color: white;
+}
+
+.copyright {
+  margin-right: auto;
+}
+
+.backtotop {
+  color: white;
+  transition: color linear 0.60s;
+}
+
+.backtotop:hover {
+  color: orange;
+}
+
+/*
+CSS that I need to add in:
+Font and text properties: font-variant, font
+Colour and background properties: background-image, background
+Positioning: absolute, relative, static, fixed
+Borders: border, border-color, border-width, border-Style "Set the border of all thesections to a solid black 2px border Set the bottom border of the header section to 2px solid white"
+Lists:list-style-type, list-style-image "Use a square list style type for all the unordered list bullet points in your website."
+Units: ems, small / medium / large "Use % to specify table widths.Use pixels to specify font sizes."
+Demonstrate an understanding of pseudo-elements: a:active and a:visited
+*/
